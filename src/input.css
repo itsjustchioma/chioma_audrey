@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Special+Elite&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen w-full bg-cover bg-no-repeat bg-center flex items-center justify-center text-black;
+    background-image: url('/assets/images/backgrounds/white_board.jpg');
+    font-family: 'Special Elite', monospace;
+  }
+}
+
+@layer components {
+  .font-handwritten {
+    font-family: 'Reenie Beanie', cursive;
+  }
+
+  .font-typewriter {
+    font-family: 'Special Elite', monospace;
+  }
+}
