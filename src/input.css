@@ -7,7 +7,7 @@
 @layer base {
   body {
     @apply min-h-screen w-full bg-cover bg-no-repeat bg-center flex items-center justify-center text-black;
-    background-image: url('/assets/images/backgrounds/white_paper.jpg');
+    background-image: url('/assets/images/backgrounds/white_board.jpg');
     font-family: 'Special Elite', monospace;
   }
 }
