@@ -11,9 +11,15 @@
   -ms-user-select: none;
 }
 
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
 @layer base {
   body {
-    @apply min-h-screen w-full bg-cover bg-no-repeat bg-center flex items-center justify-center text-black;
+    @apply h-screen w-full bg-cover bg-no-repeat bg-center flex items-center justify-center text-black;
     background-image: url('/assets/images/backgrounds/b1.png');
     font-family: 'Special Elite', monospace;
   }
