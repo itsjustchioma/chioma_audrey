@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chioma's portfolio</title>
+
+    <!-- Preload fonts early to avoid flashes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Preload background image -->
+    <link rel="preload" as="image" href="../assets/images/backgrounds/b1.png" />
+
+    <!-- Your main styles -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="icon" type="image/png" href="../assets/images/ca_logo.png" />
+  </head>
+
+  <body class="min-h-screen w-full bg-cover bg-center bg-no-repeat text-black overflow-y-auto scroll-smooth">
+
+    <!-- Home page link -->
+    <a href="/" class="fixed top-6 left-6 z-50 cursor-pointer transition-transform" title="Home">
+      <img src="../assets/images/sigg.png" alt="Chioma Audrey Uche" class="h-16 sm:h-20" />
+    </a>
+
+    <!-- Socials -->
+    <div class="fixed top-10 right-6 flex items-center gap-4 z-50">
+      <a href="mailto:chiomacodes@gmail.com" title="Email">
+        <img src="../assets/images/email.png" alt="Email" class="h-4 sm:h-5 hover:scale-110 transition-transform" />
+      </a>
+      <a href="https://github.com/itsjustchioma" target="_blank" rel="noopener" title="GitHub">
+        <img src="../assets/images/github.png" alt="GitHub" class="h-4 sm:h-5 hover:scale-110 transition-transform" />
+      </a>
+      <a href="https://www.goodreads.com/itsjustchioma" target="_blank" rel="noopener" title="Goodreads">
+        <img src="../assets/images/goodreads.png" alt="Goodreads" class="h-4 sm:h-5 hover:scale-110 transition-transform" />
+      </a>
+      <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" title="LinkedIn">
+        <img src="../assets/images/linkedin.png" alt="LinkedIn" class="h-4 sm:h-5 hover:scale-110 transition-transform" />
+      </a>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="fixed top-10 left-1/2 transform -translate-x-1/2 z-40">
+      <ul class="flex flex-wrap gap-4 sm:gap-6 font-typewriter text-sm sm:text-base text-black">
+        <li><a href="#about" class="hover:underline">/about</a></li>
+        <li><a href="#experience" class="hover:underline">/experience</a></li>
+        <li><a href="#education" class="hover:underline">/education</a></li>
+        <li><a href="#projects" class="hover:underline">/projects</a></li>
+        <li><a href="#recommendations" class="hover:underline">/recommendations</a></li>
+        <li><a href="#articles" class="hover:underline">/articles</a></li>
+      </ul>
+    </nav>
+
+  </body>
+</html>
