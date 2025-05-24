@@ -17,6 +17,15 @@ module.exports = {
         screens: {
           xlplus: "1250px", // Your custom screen size
         },
+        keyframes: {
+          blink: {
+            '0%, 49%': { opacity: '1' },
+            '50%, 100%': { opacity: '0' },
+          },
+        },
+        animation: {
+          blink: 'blink 1s step-start infinite',
+        },
       },
     },
     plugins: [],
