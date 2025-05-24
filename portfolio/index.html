@@ -20,30 +20,15 @@
 
   <body class="min-h-screen w-full bg-cover bg-center bg-no-repeat text-black overflow-y-auto scroll-smooth">
 
-    <!-- Home page link -->
-    <a href="/" class="fixed top-6 left-6 z-50 cursor-pointer transition-transform" title="Home">
-      <img src="../assets/images/sigg.png" alt="Chioma Audrey Uche" class="h-16 sm:h-20" />
-    </a>
+    <!-- Header Container-->
+    <div class="fixed top-8 left-1/2 transform -translate-x-1/2 w-[90vw] max-w-[1440px] flex justify-between items-center px-6 z-50">
+      <!-- Signature (always visible) -->
+      <a href="/" title="Home">
+        <img src="../assets/images/sigg.png" alt="Chioma Audrey Uche" class="h-20" />
+      </a>
 
-    <!-- Socials -->
-    <div class="fixed top-10 right-6 flex items-center gap-4 z-50">
-      <a href="mailto:chiomacodes@gmail.com" title="Email">
-        <img src="../assets/images/email.png" alt="Email" class="h-4 sm:h-5 hover:scale-110 transition-transform" />
-      </a>
-      <a href="https://github.com/itsjustchioma" target="_blank" rel="noopener" title="GitHub">
-        <img src="../assets/images/github.png" alt="GitHub" class="h-4 sm:h-5 hover:scale-110 transition-transform" />
-      </a>
-      <a href="https://www.goodreads.com/itsjustchioma" target="_blank" rel="noopener" title="Goodreads">
-        <img src="../assets/images/goodreads.png" alt="Goodreads" class="h-4 sm:h-5 hover:scale-110 transition-transform" />
-      </a>
-      <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" title="LinkedIn">
-        <img src="../assets/images/linkedin.png" alt="LinkedIn" class="h-4 sm:h-5 hover:scale-110 transition-transform" />
-      </a>
-    </div>
-
-    <!-- Navigation Links -->
-    <nav class="hidden xlplus:block fixed top-12 left-1/2 transform -translate-x-1/2 z-40 w-[90vw] max-w-[1440px] px-6">
-      <ul class="flex justify-center flex-wrap gap-x-10 font-typewriter text-sm xlplus:text-base text-black">
+      <!-- Nav Links (only visible on xlplus screens) -->
+      <ul class="hidden xlplus:flex gap-x-10 font-typewriter text-sm xlplus:text-base text-black">
         <li><a href="#about" class="hover:underline">/about</a></li>
         <li><a href="#experience" class="hover:underline">/experience</a></li>
         <li><a href="#education" class="hover:underline">/education</a></li>
@@ -51,6 +36,22 @@
         <li><a href="#recommendations" class="hover:underline">/recommendations</a></li>
         <li><a href="#articles" class="hover:underline">/articles</a></li>
       </ul>
-    </nav>
+
+      <!-- Social Icons (always visible) -->
+      <div class="flex items-center gap-4">
+        <a href="mailto:chiomacodes@gmail.com" title="Email">
+          <img src="../assets/images/email.png" alt="Email" class="h-5 hover:scale-110 transition-transform" />
+        </a>
+        <a href="https://github.com/itsjustchioma" target="_blank" rel="noopener" title="GitHub">
+          <img src="../assets/images/github.png" alt="GitHub" class="h-5 hover:scale-110 transition-transform" />
+        </a>
+        <a href="https://www.goodreads.com/itsjustchioma" target="_blank" rel="noopener" title="Goodreads">
+          <img src="../assets/images/goodreads.png" alt="Goodreads" class="h-5 hover:scale-110 transition-transform" />
+        </a>
+        <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" title="LinkedIn">
+          <img src="../assets/images/linkedin.png" alt="LinkedIn" class="h-5 hover:scale-110 transition-transform" />
+        </a>
+      </div>
+    </div>
   </body>
 </html>
