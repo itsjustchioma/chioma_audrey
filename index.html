@@ -60,10 +60,23 @@
               <span class="hidden sm:block font-typewriter text-sm sm:text-base mb-2 ml-1">software engineer</span>
               <span class="relative inline-block font-handwritten text-red-800 text-4xl sm:text-3xl md:text-5xl pr-2 sm:pr-6 whitespace-nowrap sm:rotate-[-3deg]">
                 and this is
-                <span class="relative inline-block">
-                  my portfolio
-                  <span class="absolute -bottom-1 left-0 w-full h-[2px] bg-red-800 rounded-full shadow-sm skew-x-[2deg] rotate-[-1deg] before:content-[''] before:absolute before:w-[96%] before:h-full before:bg-red-800 before:left-[2%] before:skew-y-[1deg] before:rotate-[0.5deg] before:rounded-full"></span>
-                </span> :)
+                <span class="relative inline-block group cursor-pointer">
+                  <a href="/portfolio/" class="relative z-10">my portfolio</a>
+
+                  <!-- Handwritten nudge -->
+                  <span class="absolute -bottom-6 left-1 text-xs text-red-800 font-handwritten whitespace-nowrap rotate-[-2deg]">
+                    click to see full portfolio
+                  </span>
+
+                  <!-- Hand-drawn arrow (SVG, slightly scribbly) -->
+                  <svg class="absolute -bottom-[18px] left-0 w-[190px] h-6 text-red-800 rotate-[-2deg]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 190 20">
+                    <!-- scribble curve -->
+                    <path d="M0 12 Q30 10, 70 12 Q110 14, 150 13" stroke-linecap="round" />
+                    <!-- arrowhead -->
+                    <path d="M140 10 L160 13 L140 16" stroke-linecap="round" />
+                  </svg>
+                </span>
+                :)
               </span>
             </div>
           </div>
