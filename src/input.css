@@ -20,7 +20,7 @@ body {
 @layer base {
   body {
     @apply h-screen w-full bg-cover bg-no-repeat bg-center flex items-center justify-center text-black;
-    background-image: url('/assets/images/backgrounds/white_board.jpg');
+    /* background-image: url('/assets/images/backgrounds/textured.jpg'); */
     font-family: 'Special Elite', monospace;
   }
 }
