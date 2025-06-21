@@ -28,7 +28,7 @@
     <main class="pt-32 pb-20 px-6 w-full max-w-6xl mx-auto">
 
       <!-- Header -->
-      <div class="fixed top-2 left-1/2 transform -translate-x-1/2 w-[90vw] max-w-[1440px] flex justify-between items-center px-6 z-50">
+      <div class="fixed top-0 left-1/2 transform -translate-x-1/2 w-[90vw] max-w-[1440px] flex justify-between items-center px-6 z-50 bg-white/80 backdrop-blur-md shadow-md">
         <a href="/" title="Home">
           <img src="../assets/images/sigg.png" alt="Chioma Audrey Uche" class="h-20" />
         </a>
@@ -60,36 +60,83 @@
         </div>
       </div>
 
-      <!-- About -->
-      <section id="about">
-      </section>
+      <main class="pt-32 pb-20 px-6 w-full max-w-6xl mx-auto"></main>
+        <!-- About -->
+        <section id="about" class="pt-64 pb-32 px-6 font-typewriter text-sm sm:text-base">
+          <!-- Section Title -->
+          <h2 class="text-center text-red-800 text-2xl sm:text-3xl font-handwritten mb-12">about me:</h2>
+          <!-- Grid Layout -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto items-center">
+            <!-- Image with hand-drawn frame using SVG -->
+            <div class="relative mx-auto w-full max-w-xs sm:max-w-sm">
+              <!-- Actual Image -->
+              <img src="../assets/images/my standard picture.jpeg" alt="Chioma Audrey" class="w-full relative z-10" />
+              <!-- SVG Frame -->
+              <svg
+                class="absolute -top-6 -left-4 w-[110%] h-[110%] z-20 pointer-events-none"
+                viewBox="0 0 200 240"
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <path
+                  d="M10,10 C20,5 180,5 190,10 C195,20 195,220 190,230 C180,235 20,235 10,230 C5,220 5,20 10,10 Z"
+                  fill="none"
+                  stroke="#991B1B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  />
+              </svg>
+            </div>
+            <!-- Bio text -->
+            <div class="text-black leading-relaxed ">
+              <p><span class="font-bold">NAME:</span> Chioma</p>
+              <p><span class="font-bold">SURNAME:</span> Uche</p>
+              <p><span class="font-bold">AGE:</span> 20s</p>
+              <p><span class="font-bold">EDUCATION:</span> Middlesex University, London</p>
+              <p class="mt-4 whitespace-pre-line">
+                <span class="font-bold">WHO AM I?</span>
+                I'm a software engineer and storyteller
+                who finds joy in the blend of intentionality,
+                simplicity, and creativity.
+                I’m building a life I love through words,
+                design, and code, one story at a time.
+              </p>
+            </div>
+          </div>
+          <!-- Section indicator -->
+          <div class="mt-12 text-center text-black font-typewriter text-xs tracking-widest">
+            .01
+          </div>
+        </section>
 
-      <!-- Experience -->
-      <section id="experience">
-      </section>
+        <!-- Experience -->
+        <section id="experience">
+        </section>
 
-      <!-- Projects -->
-      <section id="projects">
-      </section>
+        <!-- Projects -->
+        <section id="projects">
+        </section>
 
-      <!-- Articles -->
-      <section id="articles">
-      </section>
+        <!-- Articles -->
+        <section id="articles">
+        </section>
 
-      <!-- Recommendations -->
-      <section id="recommendations">
-      </section>
+        <!-- Recommendations -->
+        <section id="recommendations">
+        </section>
 
-      <!-- Footer -->
-      <footer class="mt-20 w-full text-center text-xs text-black font-typewriter font-extrabold">
-        <p>
-          Built by <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" class="hover:text-red-800 transition">Chioma</a> · Inspired by
-          <a href="https://it.linkedin.com/in/vittoria-greselin-work" target="_blank" rel="noopener" class="hover:text-red-800 transition">
-            Vittoria.
-          </a>
-        </p>
-        <p>© 2025 All rights reserved.</p>
-      </footer>
+        <!-- Footer -->
+        <footer class="mt-20 w-full text-center text-xs text-black font-typewriter font-extrabold">
+          <p>
+            Built by <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" class="hover:text-red-800 transition">Chioma</a> · Inspired by
+            <a href="https://it.linkedin.com/in/vittoria-greselin-work" target="_blank" rel="noopener" class="hover:text-red-800 transition">
+              Vittoria.
+            </a>
+          </p>
+          <p>© 2025 All rights reserved.</p>
+        </footer>
+      </main>
 
     </main>
   </body>
