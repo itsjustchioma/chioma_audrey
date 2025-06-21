@@ -17,6 +17,8 @@ module.exports = {
         },
         screens: {
           xlplus: "1250px", // Your custom screen size
+          mdplus: "1100px",
+          ssm: "680px",
         },
         keyframes: {
           blink: {
