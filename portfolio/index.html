@@ -8,70 +8,89 @@
     <!-- Preload fonts early to avoid flashes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
 
     <style>
       body {
-        background: url('assets/images/backgrounds/b1.png') center center / cover no-repeat fixed;
-        background-color: #fefefe;
+        background: url('../assets/images/backgrounds/textured.jpg') center center / cover no-repeat fixed;
       }
     </style>
 
     <!-- Preload background image -->
-    <link rel="preload" as="image" href="../assets/images/backgrounds/b1.png" />
+    <link rel="preload" as="image" href="../assets/images/backgrounds/textured.jpg" />
 
     <!-- Main styles -->
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="icon" type="image/png" href="../assets/images/ca_logo.png" />
   </head>
 
-  <body class="min-h-screen w-full text-black overflow-y-auto scroll-smooth">
-    <main class="w-full p-6"></main>
+  <body class="min-h-screen w-full text-black scroll-smooth">
+    <main class="pt-32 pb-20 px-6 w-full max-w-6xl mx-auto">
 
-      <!-- Header-->
+      <!-- Header -->
       <div class="fixed top-2 left-1/2 transform -translate-x-1/2 w-[90vw] max-w-[1440px] flex justify-between items-center px-6 z-50">
-
-        <!-- Signature-->
         <a href="/" title="Home">
           <img src="../assets/images/sigg.png" alt="Chioma Audrey Uche" class="h-20" />
         </a>
 
-        <!-- Nav links -->
         <ul class="hidden xlplus:flex gap-x-10 font-typewriter text-sm xlplus:text-base text-black">
-          <li><a href="#about" class="hover:text-red-700">/about</a></li>
-          <li><a href="#experience" class="hover:text-red-700">/experience</a></li>
-          <li><a href="#projects" class="hover:text-red-700">/projects</a></li>
-          <li><a href="#recommendations" class="hover:text-red-700">/recommendations</a></li>
-          <li><a href="#articles" class="hover:text-red-700">/articles</a></li>
+          <li><a href="#about" class="hover:text-red-800">/about</a></li>
+          <li><a href="#experience" class="hover:text-red-800">/experience</a></li>
+          <li><a href="#projects" class="hover:text-red-800">/projects</a></li>
+          <li><a href="#articles" class="hover:text-red-800">/articles</a></li>
+          <li><a href="#recommendations" class="hover:text-red-800">/recommendations</a></li>
         </ul>
 
-        <!-- Social icons -->
         <div class="flex items-center gap-4">
           <a href="mailto:chiomacodes@gmail.com" title="Email">
-            <img src="../assets/images/email.png" alt="Email" class="h-5 hover:scale-110 transition-transform" />
+            <img src="../assets/images/socials/email.png" alt="Email" class="h-5 hover:scale-110 transition-transform" />
           </a>
           <a href="https://github.com/itsjustchioma" target="_blank" rel="noopener" title="GitHub">
-            <img src="../assets/images/github.png" alt="GitHub" class="h-5 hover:scale-110 transition-transform" />
+            <img src="../assets/images/socials/github.png" alt="GitHub" class="h-5 hover:scale-110 transition-transform" />
           </a>
           <a href="https://www.goodreads.com/itsjustchioma" target="_blank" rel="noopener" title="Goodreads">
-            <img src="../assets/images/goodreads.png" alt="Goodreads" class="h-5 hover:scale-110 transition-transform" />
+            <img src="../assets/images/socials/goodreads.png" alt="Goodreads" class="h-5 hover:scale-110 transition-transform" />
           </a>
           <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" title="LinkedIn">
-            <img src="../assets/images/linkedin.png" alt="LinkedIn" class="h-5 hover:scale-110 transition-transform" />
+            <img src="../assets/images/socials/linkedin.png" alt="LinkedIn" class="h-5 hover:scale-110 transition-transform" />
+          </a>
+          <a href="https://substack.com/@itsjustchioma" target="_blank" rel="noopener" title="Substack">
+            <img src="../assets/images/socials/substack.png" alt="Substack" class="h-5 hover:scale-110 transition-transform" />
           </a>
         </div>
       </div>
 
+      <!-- About -->
+      <section id="about">
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+      </section>
+
+      <!-- Articles -->
+      <section id="articles">
+      </section>
+
+      <!-- Recommendations -->
+      <section id="recommendations">
+      </section>
+
       <!-- Footer -->
-      <footer class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-xs text-black font-typewriter font-extrabold leading-relaxed">
-        <p class="whitespace-nowrap">
-          Built by Chioma · Inspired by
+      <footer class="mt-20 w-full text-center text-xs text-black font-typewriter font-extrabold">
+        <p>
+          Built by <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" class="hover:text-red-800 transition">Chioma</a> · Inspired by
           <a href="https://it.linkedin.com/in/vittoria-greselin-work" target="_blank" rel="noopener" class="hover:text-red-800 transition">
             Vittoria.
           </a>
         </p>
-        <p class="whitespace-nowrap">© 2025 All rights reserved.</p>
+        <p>© 2025 All rights reserved.</p>
       </footer>
+
     </main>
   </body>
 </html>

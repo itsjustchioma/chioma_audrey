@@ -6,6 +6,7 @@ module.exports = {
         fontFamily: {
           handwritten: ['Reenie Beanie', 'cursive'],
           typewriter: ['Special Elite', 'monospace'],
+          label: ['Bebas Neue', 'sans-serif'],
         },
         colors: {
           black: '#000000',
