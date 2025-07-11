@@ -25,9 +25,14 @@ module.exports = {
             '0%, 49%': { opacity: '1' },
             '50%, 100%': { opacity: '0' },
           },
+          gentleBounce: {
+            '0%, 100%': { transform: 'translateY(0)' },
+            '50%': { transform: 'translateY(-4px)' },
+          },
         },
         animation: {
           blink: 'blink 1s step-start infinite',
+          gentleBounce: 'gentleBounce 1.6s ease-in-out infinite',
         },
       },
     },
