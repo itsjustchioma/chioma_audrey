@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
   <body class="min-h-screen w-full text-black scroll-smooth">
     <main class="pt-28 px-6 w-full max-w-6xl mx-auto tracking-wider">
       <!-- Header -->
-       <div class="fixed top-0 left-0 w-full flex justify-between items-center px-6 z-50 bg-[url('/assets/images/backgrounds/textured.jpg')] bg-cover bg-top backdrop-blur-sm">
+       <div class="fixed top-0 left-0 w-full flex justify-between items-center px-6 z-50 bg-[url('/assets/images/backgrounds/textured.jpg')] bg-cover bg-top backdrop-blur-sm" id="navbar">
         <a href="/" title="Home">
         <img src="../assets/images/sigg.png" alt="Chioma Audrey Uche" class="h-20" />
         </a>
@@ -42,32 +42,35 @@
         </ul>
         <div class="flex items-center gap-4">
           <a href="mailto:chiomacodes@gmail.com" title="Email">
-          <img src="../assets/images/socials/email.png" alt="Email" class="h-5 hover:scale-110 transition-transform" />
+            <img src="../assets/images/socials/email.png" alt="Email" class="h-5 hover:scale-110 transition-transform" />
           </a>
           <a href="https://github.com/itsjustchioma" target="_blank" rel="noopener" title="GitHub">
-          <img src="../assets/images/socials/github.png" alt="GitHub" class="h-5 hover:scale-110 transition-transform" />
+            <img src="../assets/images/socials/github.png" alt="GitHub" class="h-5 hover:scale-110 transition-transform" />
           </a>
           <a href="https://www.goodreads.com/itsjustchioma" target="_blank" rel="noopener" title="Goodreads">
-          <img src="../assets/images/socials/goodreads.png" alt="Goodreads" class="h-5 hover:scale-110 transition-transform" />
+            <img src="../assets/images/socials/goodreads.png" alt="Goodreads" class="h-5 hover:scale-110 transition-transform" />
           </a>
           <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" title="LinkedIn">
-          <img src="../assets/images/socials/linkedin.png" alt="LinkedIn" class="h-5 hover:scale-110 transition-transform" />
+            <img src="../assets/images/socials/linkedin.png" alt="LinkedIn" class="h-5 hover:scale-110 transition-transform" />
+          </a>
+           <a href="https://itsjustchioma.substack.com/" target="_blank" rel="noopener" title="Substack">
+            <img src="../assets/images/socials/substack.png" alt="Substack" class="h-5 hover:scale-110 transition-transform" />
           </a>
         </div>
       </div>
       <!-- About -->
-      <section id="about" class="pb-4 px-6 font-typewriter text-sm sm:text-base">
+      <section id="about" class="scroll-mt-24 pb-4 font-typewriter text-sm sm:text-base">
         <!-- Section Title -->
         <h2 class="text-center text-red-800 text-4xl sm:text-5xl md:text-6xl font-handwritten mb-12">about me:</h2>
         <!-- Grid Layout -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <!-- Image with hand-drawn frame using SVG -->
           <div class="relative mx-auto w-full max-w-xs sm:max-w-sm">
             <!-- Actual Image -->
             <img src="../assets/images/my standard picture.jpeg" alt="Chioma Audrey" class="w-full relative z-10" />
             <!-- SVG Frame -->
             <svg class="absolute -top-8 -left-6 w-[114%] h-[112%] z-20 pointer-events-none" viewBox="0 0 200 240" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10,10 C20,5 180,5 190,10 C195,20 195,220 190,230 C180,235 20,235 10,230 C5,220 5,20 10,10 Z" fill="none" stroke="#B91C1C" stroke-width=".65" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M10,10 C20,5 180,5 190,10 C195,20 195,220 190,230 C180,235 20,235 10,230 C5,220 5,20 10,10 Z" fill="none" stroke="#991B1B" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
           <!-- Bio text -->
@@ -80,11 +83,7 @@
               <p><span class="font-label text-red-800">WHO AM I? </span>I'm a software engineer based in London with experience building systems used by millions. I enjoy working with companies that spark my interest, especially the ones that help businesses grow, support the environment, or just make people's lives a little better.</p>
               <!-- Arrow and Note Moved to Top Area -->
               <div class="absolute -top-28 right-4 w-full hidden mdplus:block">
-                <!-- SVG Arrow -->
-                <svg class="absolute -right-8 top-16 w-24 h-12 text-red-800 rotate-[135deg]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 80 48">
-                  <path d="M5 40 Q15 25, 30 20 Q45 15, 60 12" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M52 8 L62 12 L58 18" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <img src="/assets/svgs/short_arrow.svg" alt="Arrow" class="absolute -right-8 top-16 w-24 h-12 text-red-800 rotate-[135deg]" />
                 <!-- Handwritten Note -->
                 <p class="absolute -right-20 -top-28 text-red-800 font-handwritten font-semibold transform -rotate-[-14deg]">
                   ͙͛ Outside of code, <br>I explore everything from <br>cooking and skincare to nature, <br>apothecary, research, reading, <br>and a good dose of comedy. ✈︎
@@ -97,25 +96,109 @@
           𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .01 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
         </div>
       </section>
-      <p class="text-center"> -ˋˏ✄┈┈┈┈   ˋˏ✄┈┈┈┈ -ˋˏ✄┈┈┈┈  </p>
+      <p class="text-center my-12"> -ˋˏ✄┈┈┈┈   ˋˏ✄┈┈┈┈ -ˋˏ✄┈┈┈┈  </p>
 
       <!-- Experience -->
-      <section id="experience">
+      <section id="experience" class="scroll-mt-24 ...">
         <h2 class="text-center text-red-800 text-4xl sm:text-5xl md:text-6xl font-handwritten mb-12">experience:</h2>
-        <div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- OpenReplay -->
+          <div class="relative">
+            <img src="../assets/svgs/handdrawn_box.svg" alt="" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
 
+            <div class="relative z-20 p-8">
+              <div class="w-full aspect-square">
+                <img src="../assets/images/logos/openreplay.png" alt="OpenReplay Logo" class="w-full h-full object-contain" />
+              </div>
+
+              <div class="pt-3 text-center">
+                <h3 class="text-base font-bold font-label text-red-800">Technical Writer @ OpenReplay</h3>
+                <p class="text-xs text-black font-bold font-typewriter">Jan 2022 – May 2022</p>
+                <ul class="list-disc list-inside text-sm mt-2 text-black text-left font-typewriter">
+                  <li>Wrote developer-focused technical articles on frontend monitoring.</li>
+                  <li>Explained OpenReplay’s SDK and integration use cases in simple terms.</li>
+                  <li>Improved search visibility for core documentation and blog content.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Faircado -->
+          <div class="relative">
+            <img src="../assets/svgs/handdrawn_box.svg" alt="" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
+
+            <div class="relative z-20 p-8">
+              <div class="w-full aspect-square">
+                <img src="../assets/images/logos/faircado.png" alt="Faircado Logo" class="w-full h-full object-contain" />
+              </div>
+
+              <div class="pt-3 text-center">
+                <h3 class="text-base font-bold font-label text-red-800">[ Intern ] Software Engineer @ Faircado</h3>
+                <p class="text-xs text-black font-bold font-typewriter">Jan 2022 – May 2022</p>
+                <ul class="list-disc list-inside text-sm mt-2 text-black text-left font-typewriter">
+                  <li>Wrote developer-focused technical articles on frontend monitoring.</li>
+                  <li>Explained OpenReplay’s SDK and integration use cases in simple terms.</li>
+                  <li>Improved search visibility for core documentation and blog content.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eat App -->
+          <div class="relative">
+            <img src="../assets/svgs/handdrawn_box.svg" alt="" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
+
+            <div class="relative z-20 p-8">
+              <div class="w-full aspect-square">
+                <img src="../assets/images/logos/eat.png" alt="Eat App Logo" class="w-80% h-full object-contain" />
+              </div>
+
+              <div class="pt-3 text-center">
+                <h3 class="text-base font-bold font-label text-red-800">Software Engineer @ Eat App</h3>
+                <p class="text-xs text-black font-bold font-typewriter">Jan 2022 – May 2022</p>
+                <ul class="list-disc list-inside text-sm mt-2 text-black text-left font-typewriter">
+                  <li>Wrote developer-focused technical articles on frontend monitoring.</li>
+                  <li>Explained OpenReplay’s SDK and integration use cases in simple terms.</li>
+                  <li>Improved search visibility for core documentation and blog content.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Download cv -->
+        <div id="resume-section" class="text-center mt-12 font-handwritten text-red-800 text-2xl sm:flex sm:justify-center sm:gap-x-24">
+  <!-- Full CV Link -->
+  <a href="https://your-notion-cv-link.com" target="_blank" rel="noopener">
+    <p>⋆˚view my full cv</p>
+  </a>
+
+  <!-- Resume Interaction Section -->
+  <div id="resume-action">
+    <button
+      id="resume-toggle"
+      class="transition duration-300 ease-in-out focus:outline-none"
+    >
+      ⋆˚view / download my resume
+    </button>
+
+    <div id="resume-options" class="hidden flex-col sm:flex-row gap-y-2 sm:gap-x-24">
+      <a href="/assets/files/chioma_resume.pdf" target="_blank" rel="noopener" class="no-underline">⋆˚view resume</a>-- or --
+      <a href="/assets/files/chioma_resume.pdf" download class="no-underline">⋆˚download resume</a>
+    </div>
+  </div>
+</div>
+
         <div class="mt-12 text-center text-black font-typewriter text-xs ">
           𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .02 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
         </div>
-        <p class="text-center"> -ˋˏ✄┈┈┈┈   ˋˏ✄┈┈┈┈ -ˋˏ✄┈┈┈┈  </p>
+        <p class="text-center"> -ˋˏ✄┈┈┈┈   ˋˏ✄┈┈┈┈ -ˋˏ✄┈┈┈┈ -ˋˏ✄┈┈┈┈   ˋˏ✄┈┈┈┈ -ˋˏ✄┈┈┈┈  </p>
       </section>
 
       <!-- Projects -->
-      <section id="projects">
+      <section id="projects" class="scroll-mt-24 ...">
         <h2 class="text-center text-red-800 text-4xl sm:text-5xl md:text-6xl font-handwritten mb-12">projects:</h2>
         <div>
-
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat corrupti sit mollitia assumenda nisi nostrum ea repellat molestias quaerat. Dolor optio impedit quia. Reprehenderit magnam nobis reiciendis doloremque praesentium totam enim ullam quidem provident cumque. Voluptas adipisci deleniti vitae reiciendis laborum molestiae, facilis culpa tenetur fugit dignissimos numquam? Accusamus, blanditiis. Dolorum voluptatum a asperiores quo quisquam earum! Qui fugit ipsa voluptatem animi maxime cumque, expedita natus sequi voluptatum ullam, quibusdam exercitationem consectetur quas enim praesentium? Quisquam earum aperiam aliquam nulla porro maiores sed voluptas voluptatem exercitationem! Consequatur, laboriosam voluptas ea dolores expedita sed sit quam amet. Quos, repellat ut ratione nemo aliquam quibusdam dicta hic amet harum dolores. Dicta placeat earum hic dolor repellendus consequuntur eaque praesentium nesciunt alias adipisci. Ex illo et impedit esse atque soluta suscipit, ab magnam explicabo harum odio, nesciunt, fuga veritatis ratione. Deleniti alias beatae velit inventore. Sint ipsum qui perspiciatis vitae aperiam! Mollitia eligendi, quam sequi sint totam vero repellendus dolorum fugit nemo doloribus dignissimos repudiandae dicta nobis beatae. Ex accusantium, illo qui eum in odit provident id quod tenetur necessitatibus doloremque aut impedit enim voluptate odio ut facere voluptatum omnis expedita iure animi. Incidunt deleniti rerum quidem, animi pariatur perferendis fuga quos ipsam!
         </div>
         <div class="mt-12 text-center text-black font-typewriter text-xs ">
           𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .03 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
@@ -124,10 +207,10 @@
       </section>
 
       <!-- Articles -->
-      <section id="articles">
+      <section id="articles" class="scroll-mt-24 ...">
         <h2 class="text-center text-red-800 text-4xl sm:text-5xl md:text-6xl font-handwritten mb-12">articles:</h2>
         <div>
-
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat corrupti sit mollitia assumenda nisi nostrum ea repellat molestias quaerat. Dolor optio impedit quia. Reprehenderit magnam nobis reiciendis doloremque praesentium totam enim ullam quidem provident cumque. Voluptas adipisci deleniti vitae reiciendis laborum molestiae, facilis culpa tenetur fugit dignissimos numquam? Accusamus, blanditiis. Dolorum voluptatum a asperiores quo quisquam earum! Qui fugit ipsa voluptatem animi maxime cumque, expedita natus sequi voluptatum ullam, quibusdam exercitationem consectetur quas enim praesentium? Quisquam earum aperiam aliquam nulla porro maiores sed voluptas voluptatem exercitationem! Consequatur, laboriosam voluptas ea dolores expedita sed sit quam amet. Quos, repellat ut ratione nemo aliquam quibusdam dicta hic amet harum dolores. Dicta placeat earum hic dolor repellendus consequuntur eaque praesentium nesciunt alias adipisci. Ex illo et impedit esse atque soluta suscipit, ab magnam explicabo harum odio, nesciunt, fuga veritatis ratione. Deleniti alias beatae velit inventore. Sint ipsum qui perspiciatis vitae aperiam! Mollitia eligendi, quam sequi sint totam vero repellendus dolorum fugit nemo doloribus dignissimos repudiandae dicta nobis beatae. Ex accusantium, illo qui eum in odit provident id quod tenetur necessitatibus doloremque aut impedit enim voluptate odio ut facere voluptatum omnis expedita iure animi. Incidunt deleniti rerum quidem, animi pariatur perferendis fuga quos ipsam!
         </div>
         <div class="mt-12 text-center text-black font-typewriter text-xs ">
           𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .04 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
@@ -136,10 +219,10 @@
       </section>
 
       <!-- Recommendations -->
-      <section id="recommendations">
+      <section id="recommendations" class="scroll-mt-24 ...">
         <h2 class="text-center text-red-800 text-4xl sm:text-5xl md:text-6xl font-handwritten mb-12">recommendations:</h2>
         <div>
-
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat corrupti sit mollitia assumenda nisi nostrum ea repellat molestias quaerat. Dolor optio impedit quia. Reprehenderit magnam nobis reiciendis doloremque praesentium totam enim ullam quidem provident cumque. Voluptas adipisci deleniti vitae reiciendis laborum molestiae, facilis culpa tenetur fugit dignissimos numquam? Accusamus, blanditiis. Dolorum voluptatum a asperiores quo quisquam earum! Qui fugit ipsa voluptatem animi maxime cumque, expedita natus sequi voluptatum ullam, quibusdam exercitationem consectetur quas enim praesentium? Quisquam earum aperiam aliquam nulla porro maiores sed voluptas voluptatem exercitationem! Consequatur, laboriosam voluptas ea dolores expedita sed sit quam amet. Quos, repellat ut ratione nemo aliquam quibusdam dicta hic amet harum dolores. Dicta placeat earum hic dolor repellendus consequuntur eaque praesentium nesciunt alias adipisci. Ex illo et impedit esse atque soluta suscipit, ab magnam explicabo harum odio, nesciunt, fuga veritatis ratione. Deleniti alias beatae velit inventore. Sint ipsum qui perspiciatis vitae aperiam! Mollitia eligendi, quam sequi sint totam vero repellendus dolorum fugit nemo doloribus dignissimos repudiandae dicta nobis beatae. Ex accusantium, illo qui eum in odit provident id quod tenetur necessitatibus doloremque aut impedit enim voluptate odio ut facere voluptatum omnis expedita iure animi. Incidunt deleniti rerum quidem, animi pariatur perferendis fuga quos ipsam!
         </div>
         <div class="mt-12 text-center text-black font-typewriter text-xs ">
           𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .05 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
