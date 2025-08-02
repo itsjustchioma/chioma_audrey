@@ -200,6 +200,24 @@ document.addEventListener('DOMContentLoaded', function() {
   if (slides.length > 0) {
     initializeSlides();
 
-    setInterval(transitionToNext, 14500);
+    setInterval(transitionToNext, 12500);
   }
 });
+
+ document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.recommendation-slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.opacity = i === index ? '1' : '0';
+        slide.style.zIndex = i === index ? '10' : '0';
+      });
+    }
+
+    showSlide(current);
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }, 8000);
+  });

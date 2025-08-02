@@ -10,5 +10,5 @@
            C13 290, 16 220, 13 150
            C11 80, 14 40, 12 22
            C15 15, 18 12, 15 18 Z"
-        stroke="#991B1B" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        stroke="#991B1B" stroke-width="2.5" vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
