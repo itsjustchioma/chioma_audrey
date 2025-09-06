@@ -1,96 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chioma's portfolio</title>
-
     <!-- Preload fonts early to avoid flashes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
-
-    <style>
-      body {
-        background: url('../assets/images/backgrounds/textured.jpg') center center / cover no-repeat fixed;
-      }
-    </style>
-
     <!-- Preload background image -->
     <link rel="preload" as="image" href="../assets/images/backgrounds/textured.jpg" />
-
     <!-- Main styles -->
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="icon" type="image/png" href="../assets/images/ca_logo.png" />
+    <!-- JS -->
+    <script src="../assets/scripts/main.js" defer></script>
   </head>
-
   <body class="min-h-screen w-full text-black scroll-smooth">
-    <main class="pt-32 pb-20 px-6 w-full max-w-6xl mx-auto">
-
+    <main class="pt-28 px-6 w-full max-w-6xl mx-auto tracking-wider font-medium">
       <!-- Header -->
-      <div class="fixed top-2 left-1/2 transform -translate-x-1/2 w-[90vw] max-w-[1440px] flex justify-between items-center px-6 z-50">
+      <div class="fixed top-0 left-0 w-full flex justify-between items-center px-6 z-50 bg-[url('/assets/images/backgrounds/textured.jpg')] bg-cover bg-top backdrop-blur-sm" id="navbar">
         <a href="/" title="Home">
-          <img src="../assets/images/sigg.png" alt="Chioma Audrey Uche" class="h-20" />
+        <img src="../assets/images/sigg.png" alt="Chioma Audrey Uche" class="h-20" />
         </a>
-
-        <ul class="hidden xlplus:flex gap-x-10 font-typewriter text-sm xlplus:text-base text-black">
-          <li><a href="#about" class="hover:text-red-800">/about</a></li>
-          <li><a href="#experience" class="hover:text-red-800">/experience</a></li>
-          <li><a href="#projects" class="hover:text-red-800">/projects</a></li>
-          <li><a href="#articles" class="hover:text-red-800">/articles</a></li>
-          <li><a href="#recommendations" class="hover:text-red-800">/recommendations</a></li>
+        <!-- For larger screens -->
+        <ul class="hidden xlplus:flex gap-x-10 font-typewriter font-semibold text-sm xlplus:text-base text-black">
+          <li><a href="#about" class="hover:text-red-800">☉ about</a></li>
+          <li><a href="#experience" class="hover:text-red-800">⛏ experience</a></li>
+          <li><a href="#projects" class="hover:text-red-800">⌘ projects</a></li>
+          <li><a href="#articles" class="hover:text-red-800">✎. articles</a></li>
+          <li><a href="#recommendations" class="hover:text-red-800">𐀪𐀪 recommendations</a></li>
         </ul>
-
+        <!-- Short version (shows between ssm and xlplus only) -->
+        <ul class="hidden ssm:flex xlplus:hidden gap-x-8 font-semibold font-typewriter text-sm text-black">
+          <li><a href="#about" class="hover:text-red-800">☉ abt.</a></li>
+          <li><a href="#experience" class="hover:text-red-800">⛏ exp.</a></li>
+          <li><a href="#projects" class="hover:text-red-800">⌘ proj.</a></li>
+          <li><a href="#articles" class="hover:text-red-800">✎ blogs.</a></li>
+          <li><a href="#recommendations" class="hover:text-red-800">𐀪𐀪 recs.</a></li>
+        </ul>
         <div class="flex items-center gap-4">
+          <a href="https://calendly.com/chiomacodes/30min" target="_blank" rel="noopener" title="Schedule a meeting with me!">
+          <img src="../assets/images/socials/calendar.png" alt="Calendly" class="h-5 hover:scale-110 transition-transform" />
+          </a>
           <a href="mailto:chiomacodes@gmail.com" title="Email">
-            <img src="../assets/images/socials/email.png" alt="Email" class="h-5 hover:scale-110 transition-transform" />
+          <img src="../assets/images/socials/email.png" alt="Email" class="h-5 hover:scale-110 transition-transform" />
           </a>
           <a href="https://github.com/itsjustchioma" target="_blank" rel="noopener" title="GitHub">
-            <img src="../assets/images/socials/github.png" alt="GitHub" class="h-5 hover:scale-110 transition-transform" />
+          <img src="../assets/images/socials/github.png" alt="GitHub" class="h-5 hover:scale-110 transition-transform" />
           </a>
           <a href="https://www.goodreads.com/itsjustchioma" target="_blank" rel="noopener" title="Goodreads">
-            <img src="../assets/images/socials/goodreads.png" alt="Goodreads" class="h-5 hover:scale-110 transition-transform" />
+          <img src="../assets/images/socials/goodreads.png" alt="Goodreads" class="h-5 hover:scale-110 transition-transform" />
           </a>
           <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" title="LinkedIn">
-            <img src="../assets/images/socials/linkedin.png" alt="LinkedIn" class="h-5 hover:scale-110 transition-transform" />
+          <img src="../assets/images/socials/linkedin.png" alt="LinkedIn" class="h-5 hover:scale-110 transition-transform" />
           </a>
-          <a href="https://substack.com/@itsjustchioma" target="_blank" rel="noopener" title="Substack">
-            <img src="../assets/images/socials/substack.png" alt="Substack" class="h-5 hover:scale-110 transition-transform" />
+          <a href="https://itsjustchioma.substack.com/" target="_blank" rel="noopener" title="Substack">
+          <img src="../assets/images/socials/substack.png" alt="Substack" class="h-5 hover:scale-110 transition-transform" />
           </a>
         </div>
       </div>
-
       <!-- About -->
-      <section id="about">
+      <section id="about" class="scroll-mt-24 pb-4 font-typewriter text-sm sm:text-base">
+        <!-- Section Title -->
+        <h2 class="text-center text-red-800 text-5xl sm:text-5xl md:text-6xl font-handwritten font-bold mb-6 md:mb-8">about me:</h2>
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <!-- Image with hand-drawn frame using SVG -->
+          <div class="relative mx-auto w-full max-w-xs sm:max-w-sm">
+            <!-- Actual Image -->
+            <img src="../assets/images/my standard picture.jpeg" alt="Chioma Audrey" class="w-full relative z-10 border rounded-lg" />
+            <!-- SVG Frame -->
+            <svg class="absolute -top-8 -left-6 w-[114%] h-[112%] z-20 pointer-events-none" viewBox="0 0 200 240" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10,10 C20,5 180,5 190,10 C195,20 195,220 190,230 C180,235 20,235 10,230 C5,220 5,20 10,10 Z" fill="none" stroke="#991B1B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <!-- Bio text -->
+          <div class="text-black leading-relaxed text-sm sm:text-lg">
+            <p><span class="font-label mb-4 text-red-800">NAME:</span> <span class="font-typewriter">Chioma Audrey</span></p>
+            <p><span class="font-label mb-4 text-red-800">SURNAME:</span> <span class="font-typewriter">Uche-Nwosu</span></p>
+            <p><span class="font-label text-red-800">AGE:</span> <span class="font-typewriter" id="dynamic-age"></span></p>
+            <p><span class="font-label text-red-800">EDUCATION:</span> <span class="font-typewriter">B.Sc. (Hons.) in IT & Business Information Systems, Middlesex University, London</span></p>
+            <div class="relative">
+              <p><span class="font-label text-red-800">WHO AM I? </span>I'm a software engineer and writer based in London with experience building systems used by millions. I enjoy working with companies that spark my interest, especially the ones that help businesses grow, support the environment, or just make people's lives a little better.</p>
+              <!-- Arrow and Note Moved to Top Area -->
+              <div class="absolute -top-28 right-4 w-full hidden mdplus:block">
+                <img src="/assets/svgs/short_arrow.svg" alt="Arrow" class="absolute -right-8 top-16 w-24 h-12 text-red-800 rotate-[135deg]" />
+                <!-- Handwritten Note -->
+                <p class="absolute -right-20 -top-28 text-red-800 text-xl font-handwritten font-semibold transform -rotate-[-14deg]">
+                  ͙͛ Outside of code, <br>I explore everything from <br>cooking and skincare to nature, <br>apothecary, research, reading, <br>and a good dose of comedy. ✈︎
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center text-black font-typewriter font-extrabold text-sm">
+          𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .01 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
+        </div>
       </section>
-
+      <p class="text-center sm:hidden">ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ </p>
+      <p class="hidden sm:block text-center">-ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈</p>
+      <br>
       <!-- Experience -->
-      <section id="experience">
-      </section>
-
-      <!-- Projects -->
-      <section id="projects">
-      </section>
-
-      <!-- Articles -->
-      <section id="articles">
-      </section>
-
-      <!-- Recommendations -->
-      <section id="recommendations">
-      </section>
-
-      <!-- Footer -->
-      <footer class="mt-20 w-full text-center text-xs text-black font-typewriter font-extrabold">
-        <p>
-          Built by <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" class="hover:text-red-800 transition">Chioma</a> · Inspired by
-          <a href="https://it.linkedin.com/in/vittoria-greselin-work" target="_blank" rel="noopener" class="hover:text-red-800 transition">
-            Vittoria.
+      <section id="experience" class="scroll-mt-24 ...">
+        <h2 class="text-center text-red-800 text-5xl sm:text-5xl md:text-6xl font-handwritten font-bold mb-4 md:mb-8">experience:</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
+          <!-- Eat App -->
+          <div class="relative">
+            <img src="../assets/svgs/handdrawn_box.svg" alt="" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
+            <div class="relative z-20 p-8">
+              <div class="w-full aspect-square">
+                <img src="../assets/images/logos/eat.png" alt="Eat App Logo" class="w-80% h-full object-contain" />
+              </div>
+              <div class="pt-3 text-center">
+                <h3 class="text-lg font-bold font-label text-red-800">Software Engineer <span class="text-red-800 lg:text-black">@ </span><a href="https://en.wikipedia.org/wiki/Eat_App" target="_blank" rel="noopener" class="hover:text-black">Eat App</a></h3>
+                <p class="text-sm text-black font-bold font-typewriter">Aug 2023 – Present</p>
+                <p class="text-xs sm:text-sm mt-2 text-black text-center font-typewriter block md:hidden lg:block">
+                  Building core features used globally by thousands daily, delivering urgent tools for top-tier enterprise clients, and contributing directly to customer retention.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- OpenReplay -->
+          <div class="relative">
+            <img src="../assets/svgs/handdrawn_box.svg" alt="" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
+            <div class="relative z-20 p-8">
+              <div class="w-full aspect-square">
+                <img src="../assets/images/logos/openreplay.png" alt="OpenReplay Logo" class="w-full h-full object-contain" />
+              </div>
+              <div class="pt-3 text-center">
+                <h3 class="text-lg font-bold font-label text-red-800">Technical Writer <span class="text-red-800 lg:text-black">@ </span> <a href="https://openreplay.com/" target="_blank" rel="noopener" class="hover:text-black">OpenReplay</a></h3>
+                <p class="text-sm text-black font-bold font-typewriter">Dec 2022 – Jan 2025</p>
+                <p class="text-xs sm:text-sm mt-2 text-black text-center font-typewriter block md:hidden lg:block">
+                  Wrote high-performing articles on web performance, including one that became a top 3 most-read on OpenReplay's blog.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Faircado -->
+          <div class="relative">
+            <img src="../assets/svgs/handdrawn_box.svg" alt="" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
+            <div class="relative z-20 p-8">
+              <div class="w-full aspect-square">
+                <img src="../assets/images/logos/faircado.png" alt="Faircado Logo" class="w-full h-full object-contain" />
+              </div>
+              <div class="pt-3 text-center">
+                <h3 class="text-lg font-bold font-label text-red-800">[ Intern ] Software Engineer <span class="text-red-800 lg:text-black">@ </span> <a href="https://faircado.de/" target="_blank" rel="noopener" class="hover:text-black">Faircado</a></h3>
+                <p class="text-sm text-black font-bold font-typewriter">Mar 2023 – Aug 2023</p>
+                <p class="text-xs sm:text-sm mt-2 text-black text-center font-typewriter block md:hidden lg:block">
+                  Built scrapers, dashboards, and SEO content that increased traffic by 30% and streamlined internal data workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Download cv -->
+        <div id="resume-section" class="text-center mt-12 font-handwritten text-red-800 text-2xl font-extrabold sm:flex sm:justify-center sm:gap-x-24">
+          <a href="https://plausible-key-3ea.notion.site/Chioma-Audrey-Uche-Nwosu-331e2643b3a04fa89d9b746f540aa86c?pvs=74" target="_blank" rel="noopener">
+            <p class="animate-gentleBounce">⋆˚view my full cv</p>
           </a>
-        </p>
-        <p>© 2025 All rights reserved.</p>
-      </footer>
-
+          <p class="sm:hidden">𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃</p>
+          <!-- Resume Interaction Section -->
+          <div id="resume-action">
+            <button
+              id="resume-toggle"
+              class="transition duration-300 ease-in-out focus:outline-none animate-gentleBounce"
+              >
+            ⋆˚view / download my resume
+            </button>
+            <div id="resume-options" class="hidden flex-col sm:flex-row gap-y-2 sm:gap-x-24">
+              <a href="/assets/chioma_audrey_resume.pdf" target="_blank" rel="noopener" class="no-underline animate-gentleBounce">⋆˚view resume</a>/
+              <a href="/assets/chioma_audrey_resume.pdf" download class="no-underline animate-gentleBounce">⋆˚download resume</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center text-black font-typewriter font-extrabold text-sm">
+          𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .02 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
+        </div>
+      </section>
+      <p class="text-center sm:hidden">ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ </p>
+      <p class="hidden sm:block text-center">-ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈</p>
+      <br>
+      <!-- Projects -->
+      <section id="projects" class="scroll-mt-24">
+        <h2 class="text-center font-bold text-red-800 text-5xl sm:text-5xl md:text-6xl font-handwritten mb-4 md:mb-8">pet projects:</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-16 sm:gap-24">
+          <div class="flex items-start gap-6">
+            <div class="relative flex items-start gap-3 flex-shrink-0">
+              <p class="text-[120px] sm:text-[140px] font-handwritten font-normal text-red-800 leading-none">01</p>
+              <img src="../assets/svgs/handdrawn_line.svg" alt="" class="h-[280px] mt-2 hidden lg:block" />
+            </div>
+            <div class="pt-1">
+              <h3 class="text-xl sm:text-3xl font-label font-light text-black tracking-wide hover:text-red-800"><a href="https://builtwith.appwrite.io/projects/64876b4f93f84c9dee02/" target="_blank" rel="noopener">Mamaput Hub</a></h3>
+              <ul class="mt-2 font-typewriter text-black text-sm md:text-lg list-none space-y-1">
+                <li><span class="text-red-800">༯ </span>Recipe sharing platform for food lovers</li>
+                <li><span class="text-red-800">༯ </span>Over 200 signed-up users</li>
+                <li><span class="text-red-800">༯ </span>Built with React, Appwrite & Tailwind CSS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="relative flex items-start gap-3 flex-shrink-0">
+              <p class="text-[120px] sm:text-[140px] font-normal font-handwritten text-red-800 leading-none">02</p>
+              <img src="../assets/svgs/handdrawn_line.svg" alt="" class="h-[280px] mt-2 hidden lg:block" />
+            </div>
+            <div class="pt-1">
+              <h3 class="text-xl sm:text-3xl font-label font-light text-black tracking-wide">Numíì</h3>
+              <ul class="mt-2 font-typewriter text-black text-sm md:text-lg list-none space-y-1">
+                <li><span class="text-red-800">༯ </span>Still in development... ⛏</li>
+                <li><span class="text-red-800">༯ </span>AI-powered personal finance tracker</li>
+                <li><span class="text-red-800">༯ </span>Syncs bank data and analyzes spending</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center text-black font-typewriter font-extrabold text-sm">
+          𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .03 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
+        </div>
+      </section>
+      <p class="text-center sm:hidden">ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ </p>
+      <p class="hidden sm:block text-center">-ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈</p>
+      <br>
+      </section>
+      <!-- Articles -->
+      <section id="articles" class="scroll-mt-24 ...">
+        <h2 class="text-center text-red-800 text-5xl sm:text-5xl md:text-6xl font-handwritten font-bold mb-4 md:mb-8">articles:</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:items-stretch relative">
+          <!-- Arrow pointing to Featured Articles (Left side) -->
+          <div class="absolute -top-16 left-0 w-full hidden lg:block">
+            <img src="/assets/svgs/short_arrow.svg" alt="Arrow" class="absolute left-16 top-4 w-24 h-12 text-red-800 rotate-[90deg]" />
+            <!-- Featured Articles Label -->
+            <p class="absolute left-36 -top-42 text-red-800 text-xl font-handwritten font-semibold transform rotate-[-8deg]">
+              ⋆featured articles;<br> [my favorite articles] ✈︎
+            </p>
+          </div>
+          <!-- Arrow pointing to Publications (Right side) -->
+          <div class="absolute -top-16 right-0 w-full hidden lg:block">
+            <img src="/assets/svgs/short_arrow.svg" alt="Arrow" class="absolute right-16 top-12 w-24 h-12 text-red-800 rotate-[90deg]" />
+            <!-- Publications Label -->
+            <p class="absolute right-2 -top-4 text-red-800 text-xl font-handwritten font-semibold transform rotate-[8deg]">
+              ⋆publications<br>i've written for ✈︎
+            </p>
+          </div>
+          <div class="relative">
+            <img src="../assets/svgs/article_square.svg" alt="" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
+            <div class="relative z-20 pt-8 pb-2 px-8 h-full">
+              <div id="featured-slideshow" class="relative h-[335px] md:h-[550px] lg:h-[450px] overflow-hidden">
+                <!-- Slide 1 -->
+                <div class="slide absolute inset-0" data-slide="0">
+                  <div class="slide-content text-center h-full flex flex-col justify-between p-4">
+                    <a href="https://blog.openreplay.com/hacking-the-brain--neuroscience-for-web-design/" target="_blank" rel="noopener">
+                      <h3 class="slide-title text-base sm:text-lg md:text-xl lg:text-2xl font-label text-black hover:text-red-800 font-bold mb-3">Hacking the Brain: Unleashing the Power of Neuroscience for Web Design</h3>
+                      <div class="slide-image flex items-center justify-center mb-3 md:flex-1 lg:flex-none">
+                        <img src="../assets/images/articles/neuro.png" alt="Neuroscience article" class="object-contain border rounded-lg" />
+                      </div>
+                      <p class="slide-description text-xs sm:text-sm font-typewriter text-black">This article explores how psychological principles can enhance user experience and engagement in web design.</p>
+                    </a>
+                  </div>
+                  <div class="erase-overlay absolute inset-0 pointer-events-none"></div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide absolute inset-0" data-slide="1">
+                  <div class="slide-content text-center h-full flex flex-col justify-between p-4">
+                    <a href="https://blog.openreplay.com/untapped-powers-of-multilingual-sites/" target="_blank" rel="noopener">
+                      <h3 class="slide-title text-base sm:text-lg md:text-xl lg:text-2xl font-label text-black hover:text-red-800 font-bold mb-3">The Untapped Power of Multilingual Websites</h3>
+                      <div class="slide-image flex items-center justify-center mb-3 md:flex-1 lg:flex-none">
+                        <img src="../assets/images/articles/multil.png" alt="Multilingual article article" class="object-contain border rounded-lg" />
+                      </div>
+                      <p class="slide-description text-xs sm:text-sm font-typewriter text-black">What will you lose if your site doesn't support multiple languages? This article will explain why and how you should include them in every website.</p>
+                    </a>
+                  </div>
+                  <div class="erase-overlay absolute inset-0 pointer-events-none"></div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide absolute inset-0" data-slide="2">
+                  <div class="slide-content text-center h-full flex flex-col justify-between p-4">
+                    <a href="https://blog.openreplay.com/ten-ways-prompt-engineering-transforms-development-work/" target="_blank" rel="noopener">
+                      <h3 class="slide-title text-base sm:text-lg md:text-xl lg:text-2xl font-label text-black hover:text-red-800 font-bold mb-3">10 Ways Prompt Engineering Transforms Development Work</h3>
+                      <div class="slide-image flex items-center justify-center mb-3 md:flex-1 lg:flex-none">
+                        <img src="../assets/images/articles/prompt_eng.png" alt="Prompt Engineering article" class="object-contain border rounded-lg" />
+                      </div>
+                      <p class="slide-description text-xs sm:text-sm font-typewriter text-black">AI can greatly transform software engineering work, and this article will provide ten examples.</p>
+                    </a>
+                  </div>
+                  <div class="erase-overlay absolute inset-0 pointer-events-none"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog Links Section (Right side - Individual Rectangles) -->
+          <div class="flex sm:mt-4 flex-col gap-4 h-auto lg:h-[450px] lg:justify-center">
+            <!-- Eat App Blog -->
+            <div class="relative">
+              <img src="../assets/svgs/rectangle.svg" alt="eat app" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
+              <div class="relative z-20 p-6 text-center">
+                <a href="https://restaurant.eatapp.co/blog/author/chioma" target="_blank" rel="noopener">
+                  <h4 class="text-xl font-label text-black hover:text-red-800 uppercase tracking-wide mb-1">Eat App</h4>
+                  <p class="text-xs sm:text-sm font-typewriter text-black">Simple guides on restaurant tech, better bookings, and tools that make running a venue way easier.</p>
+                </a>
+              </div>
+            </div>
+            <!-- Faircado Blog -->
+            <div class="relative">
+              <img src="../assets/svgs/rectangle.svg" alt="faircado" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
+              <div class="relative z-20 p-6 text-center">
+                <a href="https://faircado.com/author/chioma/" target="_blank" rel="noopener">
+                  <h4 class="text-xl font-label text-black hover:text-red-800 uppercase tracking-wide mb-1">Faircado</h4>
+                  <p class="text-xs sm:text-sm font-typewriter text-black">Fun takes on sustainability, second-hand living, and making eco-friendly choices that actually stick.</p>
+                </a>
+              </div>
+            </div>
+            <!-- OpenReplay Blog -->
+            <div class="relative">
+              <img src="../assets/svgs/rectangle.svg" alt="openreplay" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" />
+              <div class="relative z-20 p-6 text-center">
+                <a href="https://blog.openreplay.com/authors/chioma-uche-nwosu/" target="_blank" rel="noopener">
+                  <h4 class="text-xl font-label text-black hover:text-red-800 uppercase tracking-wide mb-1">OpenReplay</h4>
+                  <p class="text-xs sm:text-sm font-typewriter text-black">Read fun, practical stuff about JavaScript, web performance, and cool things happening in front-end tech.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center text-black font-typewriter font-extrabold text-sm">
+          𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .04 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
+        </div>
+        <p class="text-center sm:hidden">ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ </p>
+        <p class="hidden sm:block text-center">-ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈</p>
+        <br>
+      </section>
+      <!-- Recommendations -->
+      <section id="recommendations" class="scroll-mt-24 hidden sm:block">
+        <h2 class="text-center text-red-800 text-5xl sm:text-5xl md:text-6xl font-handwritten font-bold mb-8">recommendations:</h2>
+        <div id="recommendations-slideshow" class="relative max-w-4xl mx-auto h-[380px]">
+          <!-- Slide 1 -->
+          <div class="recommendation-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out p-4">
+            <img src="../assets/svgs/rectangle_2.svg" alt="frame" class="absolute top-0 left-0 w-full h-full z-0 pointer-events-none" />
+            <div class="relative z-10 p-6 text-center flex flex-col justify-center h-full">
+              <p class="text-md md:text-sm font-typewriter text-black mb-4 italic">
+                "Chioma joined Eat App as an intern. Back then, I wasn't offering any internship, but her reach-out email stood out and showed much character so I decided to give it a go. Since then, Chioma has demonstrated her determination, perseverance, commitment, and dedication to the tasks I assigned her. At the end of the internship, her results and passion allowed her to obtain a full-time position in the company. Well done, Chioma!"
+              </p><br>
+              <h4 class="text-base font-label text-red-800 font-bold">Valerio Donati</h4>
+              <p class="text-sm text-gray-600 font-typewriter">Ex-Engineering Manager at Eat App</p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="recommendation-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out p-4">
+            <img src="../assets/svgs/rectangle_2.svg" alt="frame" class="absolute top-0 left-0 w-full h-full z-0 pointer-events-none" />
+            <div class="relative z-10 p-6 text-center flex flex-col justify-center h-full">
+              <p class="text-md md:text-sm font-typewriter text-black mb-4 italic">
+                "It was a pleasure having Chioma as a Software Engineer Intern at Faircado. In a short span, she made a notable impact on our project by skillfully developing a sophisticated dashboard, managing databases, and crafting robust RESTful APIs with a deep dive into Spring Boot services. Chioma not only showcased exemplary technical skills but also embodied a spirit of curiosity and collaboration, consistently delivering above and beyond expectations. Highly recommended for her analytical, problem-solving, and strong leadership skills. Chioma is undoubtedly a rising star in software engineering, and I am excited to see where her career takes her next!"
+              </p><br>
+              <h4 class="text-base font-label text-red-800 font-bold">Ali Nezamolmaleki</h4>
+              <p class="text-sm text-gray-600 font-typewriter">CTO & Co-founder at Faircado</p>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="recommendation-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out p-4">
+            <img src="../assets/svgs/rectangle_2.svg" alt="frame" class="absolute top-0 left-0 w-full h-full z-0 pointer-events-none" />
+            <div class="relative z-10 p-6 text-center flex flex-col justify-center h-full">
+              <p class="text-md md:text-sm font-typewriter text-black mb-4 italic">
+                "Chioma is a great person to work with. She is motivated, full of energy, is willing to learn and contribute to the team’s mission. I would warmly recommend her for a junior developer position."
+              </p><br>
+              <h4 class="text-base font-label text-red-800 font-bold">Evoléna de Wilde d'Estmael</h4>
+              <p class="text-sm text-gray-600 font-typewriter">CEO & Co-founder at Faircado</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center text-black font-typewriter font-extrabold text-sm">
+          𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 .05 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃
+        </div>
+      </section>
+      <!-- <p class="text-center sm:hidden">ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ </p> -->
+      <p class="hidden sm:block text-center">-ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈ ˋˏ✄┈┈┈┈</p>
+      <br>
+      </section>
+      <section id="end" class="py-4 font-typewriter text-sm sm:text-base bg-paper-texture">
+        <div class="max-w-3xl mx-auto text-center relative">
+          <p class="text-2xl sm:text-3xl text-black">
+            THE END<span class="inline-block text-black align-middle">.</span>
+          </p>
+          <p class="text-2xl sm:text-3xl -m-4 font-handwritten text-red-800 inline-block rotate-[-6deg]">
+            Thank you!
+          </p>
+        </div>
+      </section>
     </main>
+    <!-- Footer -->
+    <footer class="w-full text-center text-xs text-black font-typewriter font-extrabold py-8 mt-auto">
+      <p>
+        Built by <a href="https://www.linkedin.com/in/itsjustchioma/" target="_blank" rel="noopener" class="hover:text-red-800 transition">Chioma</a> · Inspired by
+        <a href="https://it.linkedin.com/in/vittoria-greselin-work" target="_blank" rel="noopener" class="hover:text-red-800 transition">Vittoria.</a>
+      </p>
+      <p>© 2025 All rights reserved.</p>
+    </footer>
   </body>
 </html>

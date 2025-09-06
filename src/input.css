@@ -11,16 +11,13 @@
   -ms-user-select: none;
 }
 
-html,
-body {
-  height: 100vh;
-  overflow: hidden;
-}
-
 @layer base {
   body {
-    @apply h-screen w-full bg-cover bg-no-repeat bg-center flex items-center justify-center text-black;
-    font-family: 'Special Elite', monospace;
+    background-image: url('/assets/images/backgrounds/textured.jpg');
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: 100% auto;
+    background-attachment: scroll;
   }
 }
 
